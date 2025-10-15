@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter Desimal-Biner untuk IP Address</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+ 	<h1> Konversi Biner Ke Desimal Dan CIDR </h1>
+     <h3> Gunakan Sebaik Mungkin </h3>
+       <!-- Bagian 1: Desimal ke Biner -->
+    <div class="container">
+        <h2>Desimal ke Biner</h2>
+        <p>Masukkan angka desimal (0-255):</p>
+        <input type="number" id="decimalInput" min="0" max="255" placeholder="Contoh: 192">
+        <button onclick="convertDecimalToBinary()">Konversi ke Biner</button>
+        <div id="decimalToBinaryOutput" class="output"></div>
+    </div>
+
+    <!-- Bagian 2: Biner ke Desimal -->
+    <div class="container">
+        <h2>Biner ke Desimal</h2>
+        <p>Masukkan string biner (hanya 0 dan 1):</p>
+        <input type="text" id="binaryInput" placeholder="Contoh: 11000000">
+        <button onclick="convertBinaryToDecimal()">Konversi ke Desimal</button>
+        <div id="binaryToDecimalOutput" class="output"></div>
+    </div>
+    
+    <!-- Bagian IP Dan CDIR -->
+    <div class="container">
+        <h2>Input IP dan CIDR</h2>
+        <p>Masukkan alamat IP (contoh: 192.168.1.1):</p>
+        <input type="text" id="ipInput" placeholder="Contoh: 192.168.1.1">
+        <p>Masukkan nilai CIDR (0-32, contoh: 24 untuk /24):</p>
+        <input type="number" id="cidrInput" min="0" max="32" placeholder="Contoh: 24">
+        <button onclick="calculateCIDR()">Hitung CIDR</button>
+        <div id="outputResult" class="output"></div>
+        <div id="errorMessage" class="error"></div>
+    </div>
+    <div>
+    	<li>
+    	   <a href="https://wa.me/6281999155195"><ul> Lapor Bug Disini </ul></a>
+    	</li>
+    </div>
+    
+        <script src="script.js"></script>
+   </body>
+ </html>
